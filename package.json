@@ -1,0 +1,23 @@
+{
+  "name": "n2-chain-basic",
+  "version": "1.0.0",
+  "description": "Making a blockchain from scratch with front-end, back-end with Node.js, Jest, Express.js, React, Heroku, and etc",
+  "main": "dummy-blockchain.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptofluencerr/n2-chain-basic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cryptofluencerr/n2-chain-basic/issues"
+  },
+  "homepage": "https://github.com/cryptofluencerr/n2-chain-basic#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
