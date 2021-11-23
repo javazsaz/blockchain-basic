@@ -10,5 +10,5 @@ const cryptoHash = (...inputs) => {
   //to convert the hash to lowercase
   return hash.digest("hex");
 };
-console.log(cryptoHash("karan"));
+
 module.exports = cryptoHash;
