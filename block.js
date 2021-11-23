@@ -24,7 +24,5 @@ class Block {
     });
   }
 }
-console.log(Block.mineBlock({ lastBlock: GENESIS_DATA, data: "data" }));
-console.log(Block.mineBlock({ lastBlock: GENESIS_DATA, data: "saadadsa" }));
 //sharing class with other files
 module.exports = Block;
