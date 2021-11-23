@@ -19,5 +19,8 @@
   "homepage": "https://github.com/cryptofluencerr/n2-chain-basic#readme",
   "devDependencies": {
     "jest": "^27.3.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1"
   }
 }

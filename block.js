@@ -9,11 +9,11 @@ class Block {
   }
   // static means-- it can be used without instantiating the class
   static genesis() {
-    return new this(GENESIS_DATA);
+    return new Block(GENESIS_DATA);
   }
 
-  static mineBlock(lastBlock, data) {
-    return new this({
+  static mineBlock({ lastBlock, data }) {
+    return new Block({
       timestamp: Date.now(),
       lastHash: lastBlock.hash,
       data,
