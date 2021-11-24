@@ -12,6 +12,9 @@ class Blockchain {
     });
     this.chain.push(newBlock);
   }
+  isValidChain(chain) {
+    
+  }
 }
 
 module.exports = Blockchain;
