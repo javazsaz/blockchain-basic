@@ -19,18 +19,20 @@ describe("Blockchain", () => {
     blockchain.addBlock({ data: newData });
     expect(blockchain.chain[blockchain.chain.length - 1].data).toEqual(newData);
   });
+
   // check for the function isValidChain()
   describe("isValidChain()", () => {
     // when the chain does not starts with the genesis block
-    describe("when the chain does not start with the genesis block", () => {
+    describe("when the chain does not starts with the genesis block", () => {
       it("returns false", () => {
-        blockchain.chain[0] = { data: "fake-genesis" };
+        blockchain.chain[0] = { data: "worthless-data" };
         expect(Blockchain.isValidChain(blockchain.chain)).toBe(false);
       });
     });
 
     // when the chain starts with genesis block and has multiple blocks
     describe("when the chain starts with genesis block and has multiple blocks", () => {
+      // runs a function before each of the test
       beforeEach(() => {
         blockchain.addBlock({ data: "Bears" });
         blockchain.addBlock({ data: "Beets" });

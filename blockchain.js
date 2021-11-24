@@ -12,9 +12,18 @@ class Blockchain {
     });
     this.chain.push(newBlock);
   }
-  isValidChain(chain) {
-    
-  }
+  // static isValidChain(chain) {
+  //   if (chain[0] !== Block.genesis()) {
+  //     return false;
+  //   }
+  //   for (let i = 1; i < chain.length; i++) {
+  //     const block = chain[i];
+  //     const actualHash
+  //   }
+  //   return true;
+  // }
 }
 
+const blockchain = new Blockchain();
+console.log(blockchain);
 module.exports = Blockchain;
